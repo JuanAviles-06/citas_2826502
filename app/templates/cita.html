@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de citas</title>
+  </head>
+  <body>
+    <h1> Lista de citas </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>fecha</th>
+                <th>paciente_id</th>
+                <th>medico_id</th>
+                <th>Consultorio_id</th>
+                <th>valor</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            {% for cita in cita %}
+                <tr>
+                    <td> {{   cita.fecha  }}</td>
+                    <td> {{   cita.paciente_id  }}</td>
+                    <td> {{   cita.medico_id  }}</td>
+                    <td> {{   cita.Consultorio_id  }}</td>
+                    <td> {{   cita.valor  }}</td>
+            {% endfor %}
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+
+
+  </body>
+</html>
