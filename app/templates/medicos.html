@@ -12,6 +12,7 @@
             <tr>
                 <th>Nombre</th>
                 <th>Apellidos</th>
+                <th>Ver detalles</th>
                 <th>tipo_identificacion</th>
                 <th>numero_identificacion</th>
                 <th>registro_medico</th>
@@ -24,6 +25,11 @@
                 <tr>
                     <td> {{   medico.nombre   }}</td>
                     <td> {{   medico.apellidos  }}</td>
+                    <td>
+                        <a href="/medicos/{{ medico.id }}">
+                          Ver detalles
+                        </a>
+                    </td>
                     <td> {{   medico.tipo_identificacion   }}</td>
                     <td> {{   medico.numero_identificacion  }}</td>
                     <td> {{   medico.registro_medico   }}</td>
